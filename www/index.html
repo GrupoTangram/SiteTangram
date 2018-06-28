@@ -3,8 +3,99 @@
   <head>
     <meta charset="utf-8">
     <title>Tangram</title>
-  </head>
-  <body>
 
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">  
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
+  </head>
+  <body >
+  	<header>
+  		<h1>Tangram e FUNAPE</h1>
+  	</header>
+    <div id="main_body">
+
+      <div class="box"  id="card_box">
+        <h2>Idosos conectados</h2>
+       <p>
+         <?php
+       </p>
+          <div class='card'>
+            <div class="card_header" style="height:100px">
+              <img src="img/profile_default.png" >
+              <table class="info" >
+                <tr>
+                  <th><p class="info_item"> João Victor Pessoa</p></th>
+                </tr>
+                <tr>
+                  <th><p class="info_item" id="info_child">Idade: 20</p></th>
+
+                </tr>
+              </table>
+            </div>
+            <div id="card_content" style="height: 150px;">
+              <h2>Teste</h2>
+              
+            </div>
+            <script type="text/javascript">
+              // Load google charts
+              google.charts.load('current', {'packages':['corechart']});
+              google.charts.setOnLoadCallback(drawChart);
+
+              // Draw the chart and set the chart values
+              function drawChart() {
+
+                var data = new google.visualization.DataTable();
+                data.addColumn('string', 'Topping');
+                data.addColumn('number', 'Slices');
+                data.addRows([
+                  ['Mushrooms', 3],
+                  ['Onions', 1],
+                  ['Olives', 1],
+                ]);
+
+
+                var options = {
+                      'title':'Funções mais utilizadas',
+                      'width':375,
+                      'height':150,
+                      'backgroundColor':'#f3f1f1',
+                      'colors':['#00b9b9','#0084a1','#5cdfe3'],
+                      'chartArea':{left:15},
+                      'titleTextStyle': {color: '#656565',fontName:'Encode Sans Condensed' ,fontSize: 16,alignment:'left'},
+                      'legend':{position: 'labeled', textStyle: { fontName:'Roboto' ,fontSize: 16}}
+
+                    }
+
+
+              // Instantiate and draw our chart, passing in some options.
+              var chart = new google.visualization.PieChart(document.getElementById('card_content'));
+              chart.draw(data, options);
+
+              }
+            </script>
+
+            
+          </div>
+        
+
+      </div>
+      <div class="box"id="content_wrapper">
+        <h2 style="font-size: 35px">
+          O Tangram
+        </h2>
+        <img style="max-width: 80%;" src="img/tangramRender.png">
+      </div>
+
+        
+    </div>
   </body>
 </html>
