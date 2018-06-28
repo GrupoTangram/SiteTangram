@@ -1,0 +1,427 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"on",
+				"onmouseover\tAttr"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"paddin",
+				"padding-left\tproperty"
+			],
+			[
+				"ta",
+				"table-cell\tdisplay"
+			],
+			[
+				"in",
+				"inline-block\tdisplay"
+			],
+			[
+				"fonts",
+				"font-style\tproperty"
+			],
+			[
+				"margin",
+				"margin-bottom\tproperty"
+			],
+			[
+				"fl",
+				"float\tproperty"
+			],
+			[
+				"sha",
+				"box-shadow\tproperty"
+			],
+			[
+				"bac",
+				"background-color\tproperty"
+			],
+			[
+				"wid",
+				"width\tproperty"
+			],
+			[
+				"wi",
+				"width\tproperty"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"font",
+				"font-size\tproperty"
+			],
+			[
+				"bacg",
+				"background\tproperty"
+			],
+			[
+				"backg",
+				"background-color\tproperty"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"ba",
+				"background-color\tproperty"
+			],
+			[
+				"soc",
+				"socket"
+			],
+			[
+				"len",
+				"lenght"
+			],
+			[
+				"size",
+				"sizeof"
+			],
+			[
+				"se",
+				"sentence"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"utf-8\">\n    <title>Tangram</title>\n\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style/main.css\">\n    <link href=\"https://fonts.googleapis.com/css?family=Encode+Sans+Condensed\" rel=\"stylesheet\">\n    <link href=\"https://fonts.googleapis.com/css?family=Encode+Sans+Condensed\" rel=\"stylesheet\">\n    <link href=\"https://fonts.googleapis.com/css?family=Oswald:300,400\" rel=\"stylesheet\"> \n    <link href=\"https://fonts.googleapis.com/css?family=Roboto:300\" rel=\"stylesheet\">  \n\n    <script src=\"https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js\"></script>\n    <script src=\"https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js\"></script>\n\n    <script type=\"text/javascript\" src=\"js/main.js\"></script>\n    <script type=\"text/javascript\" src=\"https://www.gstatic.com/charts/loader.js\"></script>\n    \n  </head>\n  <body >\n  \t<header>\n  \t\t<h1>Tangram e FUNAPE</h1>\n  \t</header>\n    <div id=\"main_body\">\n\n      <div class=\"box\"  id=\"card_box\">\n        <h2>Idosos conectados</h2>\n       <p>\n         <?php\n       </p>\n          <div class='card'>\n            <div class=\"card_header\" style=\"height:100px\">\n              <img src=\"img/profile_default.png\" >\n              <table class=\"info\" >\n                <tr>\n                  <th><p class=\"info_item\"> João Victor Pessoa</p></th>\n                </tr>\n                <tr>\n                  <th><p class=\"info_item\" id=\"info_child\">Idade: 20</p></th>\n\n                </tr>\n              </table>\n            </div>\n            <div id=\"card_content\" style=\"height: 150px;\">\n              <h2>Teste</h2>\n              \n            </div>\n            <script type=\"text/javascript\">\n              // Load google charts\n              google.charts.load('current', {'packages':['corechart']});\n              google.charts.setOnLoadCallback(drawChart);\n\n              // Draw the chart and set the chart values\n              function drawChart() {\n\n                var data = new google.visualization.DataTable();\n                data.addColumn('string', 'Topping');\n                data.addColumn('number', 'Slices');\n                data.addRows([\n                  ['Mushrooms', 3],\n                  ['Onions', 1],\n                  ['Olives', 1],\n                ]);\n\n\n                var options = {\n                      'title':'Funções mais utilizadas',\n                      'width':375,\n                      'height':150,\n                      'backgroundColor':'#f3f1f1',\n                      'colors':['#00b9b9','#0084a1','#5cdfe3'],\n                      'chartArea':{left:15},\n                      'titleTextStyle': {color: '#656565',fontName:'Encode Sans Condensed' ,fontSize: 16,alignment:'left'},\n                      'legend':{position: 'labeled', textStyle: { fontName:'Roboto' ,fontSize: 16}}\n\n                    }\n\n\n              // Instantiate and draw our chart, passing in some options.\n              var chart = new google.visualization.PieChart(document.getElementById('card_content'));\n              chart.draw(data, options);\n\n              }\n            </script>\n\n            \n          </div>\n        \n\n      </div>\n      <div class=\"box\"id=\"content_wrapper\">\n        <h2 style=\"font-size: 35px\">\n          O Tangram\n        </h2>\n        <img style=\"max-width: 80%;\" src=\"img/tangramRender.png\">\n      </div>\n\n        \n    </div>\n  </body>\n</html>\n",
+			"file": "SiteTangram/www/index.html",
+			"file_size": 3369,
+			"file_write_time": 131744968403535859,
+			"settings":
+			{
+				"buffer_size": 3396,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "SiteTangram/www/js/main.js",
+			"settings":
+			{
+				"buffer_size": 963,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "SiteTangram/www/style/main.css",
+			"settings":
+			{
+				"buffer_size": 1148,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/joao/Tangram",
+		"/home/joao/Tangram/SiteTangram",
+		"/home/joao/Tangram/SiteTangram/www",
+		"/home/joao/Tangram/SiteTangram/www/lib",
+		"/home/joao/Tangram/SiteTangram/www/style"
+	],
+	"file_history":
+	[
+		"/home/joao/Tangram/Prototipo1/App.py",
+		"/home/joao/Tangram/Prototipo1/p.py",
+		"/home/joao/Tangram/Prototipo1/SerialHandler.py",
+		"/home/joao/Tangram/Prototipo1/README.md",
+		"/home/joao/Tangram/Prototipo1/FirebaseClient.py",
+		"/home/joao/Tangram/SiteTangram/www/style/main.css",
+		"/home/joao/Tangram/SiteTangram/www/js/main.js",
+		"/home/joao/Tangram/SiteTangram/www/index.html",
+		"/home/joao/Codigo/Buffer/exploit2.py",
+		"/home/joao/Codigo/Buffer/exploit.py",
+		"/home/joao/Codigo/GitClass/cesar-school-sd-2018-1-coding1-jvpessoa10/Q3/fnrc.c",
+		"/home/joao/Codigo/GitClass/cesar-school-sd-2018-1-coding1-jvpessoa10/Q2/palindrome.c",
+		"/home/joao/Codigo/GitClass/cesar-school-sd-2018-1-coding1-jvpessoa10/Q1/fizzbizz.c",
+		"/home/joao/Codigo/buffer.py",
+		"/home/joao/Codigo/jogoDaVelha.py"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "SiteTangram/www/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3396,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1063,
+								1063
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 357.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "SiteTangram/www/js/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 963,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								694,
+								694
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 56.0,
+						"translation.y": 153.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "SiteTangram/www/style/main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1148,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								988,
+								988
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1020.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.587352138308,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 120.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Tangram.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 200.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
